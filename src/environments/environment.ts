@@ -2,8 +2,10 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+/// <reference types="node" />
 export const environment = {
-  production: false
+  production: false,
+  endpointBaseUrl: process.env["API_ENDPOINT"] || ''
 };
 
 /*

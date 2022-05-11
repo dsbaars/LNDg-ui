@@ -1,0 +1,37 @@
+<h1>Payments</h1>
+<table class="table  table-hover  table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Timestamp</th>
+            <th>Amount In</th>
+            <th>Amount Out</th>
+            <th>Channel In Alias</th>
+            <th>Channel Out Alias</th>
+            <th>Channel In Id</th>
+            <th>Channel Out Id</th>
+            <th>Fees Earned</th>
+            <th>PPM Earned</th>
+          </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of payments; index as i">
+            <td>{{ p.creation_date }}</td>
+
+            <td>{{ p.value }}</td>
+            <td>{{ p.value }}</td>
+    
+      
+
+            <td>{{ p.chan_in_alias }}</td>
+            <td>{{ p.chan_out_alias }}</td>
+ 
+            <td>{{ p.chan_in }}</td>
+            <td>{{ p.chan_out }}</td>
+
+            <td>{{ p.fee }}</td>
+            <td>{{ p.remote_base_fee }}</td>
+
+ 
+        </tr>
+    </tbody>
+</table>

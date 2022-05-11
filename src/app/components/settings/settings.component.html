@@ -1,0 +1,15 @@
+<h1>Settings</h1>
+<table class="table  table-hover  table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of setting; index as i">
+            <td>{{ s.key }}</td>
+            <td>{{ s.value }}</td>
+        </tr>
+    </tbody>
+</table>
